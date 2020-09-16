@@ -6,13 +6,13 @@ lock '3.4.0'
 set :application, 'mumu'
 
 # cloneするgitのレポジトリ
-set :repo_url, 'git@github.com:NaokiMochizuki/mumu.git'
+set :repo_url, 'git@github.com:ichihara-development-github/terraform_test.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/mumu'
+set :deploy_to, '/www/'
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, fetch(:linked_files, []).push('config/settings.yml')
